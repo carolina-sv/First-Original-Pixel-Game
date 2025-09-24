@@ -2,6 +2,9 @@
 
 **Pixel-Game** is a web-based retro-style game featuring customizable pixel avatars and interactive elements. It is currently under active development, with features being gradually added.
 
+<img width="903" height="1097" alt="interfaceGame" src="https://github.com/user-attachments/assets/41dd6d36-0e8f-4bac-9d99-b393b3a067dc" />
+
+
 ## 🚧 Status: Work in Progress
 This project is still being built. Some features and visuals are functional, but the game is not yet complete. Expect bugs, unfinished content, and placeholder screens.
 
