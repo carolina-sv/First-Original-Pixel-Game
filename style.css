@@ -1,0 +1,170 @@
+/* Estilos globais para todas as páginas */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  flex-direction: column;
+}
+
+
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+
+/* Estilos para a página index.html */
+.index-page .background-frame {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('mario-night-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.index-page .title {
+  color: #ff66cc;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 0 15px #ff66cc, 0 0 25px #ff66cc;
+  margin-bottom: 30px;
+  animation: neonBounce 1.5s infinite;
+}
+
+@keyframes neonBounce {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc;
+  }
+  50% {
+    transform: translateY(5px);
+    text-shadow: 0 0 15px #ff66cc, 0 0 25px #ff66cc, 0 0 35px #ff66cc;
+  }
+}
+
+/* Estilos para os botões */
+.btn {
+  background-color: #00ffe7;
+  color: black;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+/* Botão de Voltar ao Menu */
+.voltar-menu {
+  margin-top: 20px;
+  background-color: #00ffe7; /* Ciano */
+  color: black;
+  border: 2px solid #000;
+  padding: 12px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.voltar-menu:hover {
+  background-color: #00cc99;
+  border-color: #00cc99;
+}
+
+/* Estilos específicos para o título "Iniciar Jogo" */
+.iniciar-jogo-title {
+  font-size: 4rem; /* Aumente o tamanho da fonte conforme necessário */
+  text-align: center;
+  color: #ff66cc;
+  text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+  margin-bottom: 30px;
+  animation: bounceShadow 1.2s infinite;
+}
+
+.title {
+  font-size: 3rem; /* Tamanho padrão para outros títulos */
+  text-align: center;
+  color: #ff66cc;
+  text-shadow: 0 0 10px #ff66cc;
+  margin-bottom: 30px;
+}
+
+/* Estilo para a página sair.html */
+.sair-page .title {
+  color: #fff; /* Alterado para branco */
+}
+
+/* Para o botão de "voltar ao menu", com som */
+.voltar-menu {
+  background-color: #00ffe7;
+}
+
+.voltar-menu:active {
+  animation: pulse 0.3s ease;
+}
+
+/* Animar o botão de "voltar" */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.iniciar-jogo-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 48px;
+  text-align: center;
+  animation: blink 1s infinite;
+  color: rgb(242, 248, 236); 
+  margin-bottom: 30px;
+  color:#ff66cc;
+}
+

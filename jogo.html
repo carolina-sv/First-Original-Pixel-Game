@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escolha seu Personagem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="exit-screen">
+    <h1 class="title">SEJA BEM-VINDO</h1>
+
+    <div class="choose-character">
+      <p class="choose-text">Escolha seu personagem:</p>
+      <button class="btn" id="showTableBtn">Mostrar Personagens</button>
+    </div>
+
+    <div class="character-table-container" id="characterTable" style="display: none;">
+      <table class="character-table">
+        <tbody>
+          <tr>
+            <td> <img src="avatarAmora.png" alt="Amora" class="amoraGif"></td>
+            <td>Amora</td>
+            <td><button class="btn select-btn">Selecionar</button></td>
+          </tr>
+          <tr>
+            <td> <img src="avatarCarol.png" alt="Carol" class="carolGif"></td>
+            <td>Carol</td>  
+            <td><button class="btn select-btn">Selecionar</button></td>
+          </tr>
+          <tr>
+            <td> <img src="avatarJulya.png" alt="Julya" class="julyaGif"></td>
+            <td>Júlya</td>
+            <td><button class="btn select-btn">Selecionar</button></td>
+          </tr>
+          <tr>
+            <td> <img src="avatarLuis.png" alt="Luis" class="luisGif"></td>
+            <td>Luís</td>
+            <td><button class="btn select-btn">Selecionar</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn" id="advanceBtn" style="display: none;">Avançar</button>
+    </div>
+  </div>
+
+  <div>
+    <button class="btn" id="backBtn">Voltar</button>
+  </div>
+
+  <audio id="clickButton" src="clickbutton.mp3" preload="auto"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script> 
+
+  <script>
+    const showTableBtn = document.getElementById('showTableBtn');
+    const characterTable = document.getElementById('characterTable');
+    const selectButtons = document.querySelectorAll('.select-btn');
+    const advanceBtn = document.getElementById('advanceBtn');
+    const clickSound = document.getElementById('clickButton');
+    const backBtn = document.getElementById('backBtn');
+  
+    showTableBtn.addEventListener('click', () => {
+      characterTable.style.display = 'block';
+    });
+  
+    selectButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        // Remove seleção de todos os botões
+        selectButtons.forEach(b => {
+          b.classList.remove('selected');
+          b.textContent = 'Selecionar';
+        });
+  
+        // Marca o botão atual como selecionado
+        btn.classList.add('selected');
+        btn.textContent = 'Selecionado';
+  
+        // Toca o som
+        clickSound.currentTime = 0;
+        clickSound.play();
+  
+        // Mostra o botão de avançar
+        advanceBtn.style.display = 'inline-block';
+      });
+    });
+  
+    advanceBtn.addEventListener('click', () => {
+      playSoundAndRedirect('game.html');
+    });
+  
+    backBtn.addEventListener('click', () => {
+      playSoundAndRedirect('index.html');
+    });
+  
+    function playSoundAndRedirect(url) {
+      clickSound.currentTime = 0;
+      clickSound.play();
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500);
+    }
+  </script>
+  
+  <style>
+    .selected {
+      background-color: #0ff !important;
+      color: #000 !important;
+    }
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Press Start 2P', cursive;
+  background: #000;
+  color: #fff;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.exit-screen {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px;
+}
+
+.choose-character, .character-table-container, #backBtn {
+  z-index: 1;
+  position: relative;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #0ff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn:hover {
+  background: #0cc;
+}
+
+.character-table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.character-table td {
+  padding: 10px;
+  border: 1px solid #0ff;
+}
+
+.selected {
+  background-color: #0ff !important;
+  color: #000 !important;
+}
+.selected {
+  background-color: #0ff !important;
+  color: #000 !important;
+  font-weight: bold;
+}
+
+
+  </style>
+
+</body>
+</html>
