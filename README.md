@@ -1,63 +1,65 @@
-# 🎮 Pixel-Game (WIP)
+# 🎮 Pixel-Game (Em Desenvolvimento)
 
-**Pixel-Game** is a web-based retro-style game featuring customizable pixel avatars and interactive elements. It is currently under active development, with features being gradually added.
+Pixel-Game é um jogo retrô baseado na web, com avatares pixelados personalizáveis e elementos interativos.
+O projeto está em desenvolvimento ativo, com novas funcionalidades sendo adicionadas gradualmente.
 
 <img width="903" height="1097" alt="interfaceGame" src="https://github.com/user-attachments/assets/41dd6d36-0e8f-4bac-9d99-b393b3a067dc" />
 
 
-## 🚧 Status: Work in Progress
-This project is still being built. Some features and visuals are functional, but the game is not yet complete. Expect bugs, unfinished content, and placeholder screens.
+## 🚧 Status: Em Construção
 
-## 📁 Project Structure
+O jogo ainda está sendo desenvolvido.
+Alguns recursos e visuais já funcionam, mas o conteúdo ainda não está completo.
+Espere encontrar áreas inacabadas e telas temporárias durante os testes.
+
+## 📁 Estrutura do Projeto
 
 ```
 📁 Pixel-Game/
-├── avatarAmora.png         # Avatar image - Amora
-├── avatarCarol.png         # Avatar image - Carol
-├── avatarJulya.png         # Avatar image - Julya
-├── avatarLuis.png          # Avatar image - Luis
-├── clickbutton.mp3         # Sound effect for button click
-├── game.html               # Game screen
-├── index.html              # Entry page
-├── jogo.html               # Main gameplay file
-├── sair.html               # Exit screen
-├── script.js               # JavaScript logic
-├── style.css               # CSS styles
+├── avatarAmora.png         # Imagem do avatar - Amora
+├── avatarCarol.png         # Imagem do avatar - Carol
+├── avatarJulya.png         # Imagem do avatar - Julya
+├── avatarLuis.png          # Imagem do avatar - Luis
+├── clickbutton.mp3         # Som de clique de botão
+├── game.html               # Tela do jogo
+├── index.html              # Página inicial
+├── jogo.html               # Arquivo principal do jogo
+├── sair.html               # Tela de saída
+├── script.js               # Lógica em JavaScript
+├── style.css               # Estilos em CSS
+
 ```
 
-## 🎨 Features (in progress)
-- 🧍‍♀️ Custom pixel avatars
-- 🔊 Button click sound effects
-- 🕹️ Basic game navigation
-- 🌐 Multiple screens (start, game, exit)
-- 💅 CSS styling for a retro vibe
+## 🎨 Funcionalidades (em progresso)
 
-## 🛠️ Technologies Used
+- 🧍‍♀️ Avatares personalizados em estilo pixel
+- 🔊 Efeitos sonoros nos botões
+- 🕹️ Navegação básica entre telas
+- 🌐 Telas múltiplas (início, jogo, saída)
+- 💅 Estilo retrô com CSS
+
+## 🛠️ Tecnologias Usadas
 - HTML5
 - CSS3
 - JavaScript
-- Git + GitHub for version control
 
-## 🚀 How to Run
-1. Clone the repository:
+## 🚀 Como rodar
+1. lone o repositório:
    ```bash
    git clone https://github.com/yourusername/Pixel-Game.git
    cd Pixel-Game
    ```
-2. Open `index.html` in your browser.
+2. Abra o arquivo `index.html` diretamente no seu navegador.
 
-> 🔈 For full experience, make sure your browser allows audio playback.
+> 🔈 Para uma melhor experiência, certifique-se de que o navegador permita a reprodução de áudio.
 
-## 👩‍💻 Contributors
+## 👩‍💻 Contribuiçoes
 - [carolina-sv](https://github.com/carolina-sv) – creator and developer
 
-## 📌 To-Do
-- [ ] Add game logic and interactivity
-- [ ] Improve character animation
-- [ ] Add background music and effects
-- [ ] Refactor code into components (optional)
-- [ ] Polish UI/UX across screens
+## 📌 Próximas Etapas
+- [ ] Adicionar lógica e interatividade ao jogo
+- [ ] Melhorar a animação dos personagens
 
 ---
 
-🎮 *Thanks for visiting! Stay tuned for updates as the game evolves.*
+🎮 Obrigada por visitar o projeto! Acompanhe as atualizações e veja o jogo evoluir!
